@@ -1,0 +1,67 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f4f7fb;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 560px);
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+p {
+  margin: 0;
+}
+
+.status-note,
+.error,
+.status-list {
+  margin-top: 20px;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.status-list {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+}
