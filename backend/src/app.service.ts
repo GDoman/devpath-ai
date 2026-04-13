@@ -15,4 +15,12 @@ export class AppService {
       timestamp: new Date().toISOString(),
     };
   }
+
+  createLearningGoal(goal: string) {
+    return {
+      originalInput: goal,
+      summary: `You want to learn: ${goal}`,
+      nextStep: 'Break this goal into one small task you can complete today.',
+    };
+  }
 }

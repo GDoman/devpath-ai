@@ -43,13 +43,19 @@ h1 {
   margin: 0 0 12px;
 }
 
+h2 {
+  margin: 28px 0 0;
+  font-size: 1.1rem;
+}
+
 p {
   margin: 0;
 }
 
 .status-note,
 .error,
-.status-list {
+.status-list,
+.goal-form {
   margin-top: 20px;
 }
 
@@ -64,4 +70,34 @@ p {
   background: #f8fafc;
   border: 1px solid #dbe4f0;
   border-radius: 12px;
+}
+
+.goal-form {
+  display: grid;
+  gap: 10px;
+}
+
+.goal-form label {
+  font-weight: 700;
+}
+
+.goal-form textarea {
+  min-height: 96px;
+  resize: vertical;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.goal-form button {
+  width: fit-content;
+  padding: 10px 16px;
+  color: #ffffff;
+  background: #2563eb;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
 }
