@@ -1,0 +1,19 @@
+// Prisma schema for the DevPath AI backend.
+// Models will be added later when the app needs database tables.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model LearningSession {
+  id        String   @id @default(cuid())
+  goal      String
+  summary   String
+  nextStep  String
+  createdAt DateTime @default(now())
+}
